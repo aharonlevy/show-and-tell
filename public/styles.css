@@ -1,0 +1,40 @@
+navbar {
+    position: relative;
+width: 100vw;
+height: 10vh;
+
+background: #FFFFFF;
+}
+navbar h1{
+    position: absolute;
+    width: 105px;
+    height: 39px;
+    left: 676px;
+    top: 32px;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 39px;
+
+}
+
+profile input{
+    position: absolute;
+width: 64px;
+height: 64px;
+left: 1264px;
+top: 20px;
+
+background: #FFFFFF;
+}
+
+.hamburger{
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    left: 16px;
+    top: 20px;
+
+background: #FFFFFF;
+}
