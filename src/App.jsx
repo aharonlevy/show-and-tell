@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import NewPostArea from './components/NewPostArea';
-import Post from './components/Post';
 
 
 function App() {
@@ -13,7 +12,6 @@ root.render(<div>
 <Navbar/>
 <NewPostArea/>
 <div className='grid-container'>
-  <Post />
 </div>
 <Footer/>
 </div>);

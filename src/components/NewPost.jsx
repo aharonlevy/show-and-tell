@@ -2,7 +2,8 @@ import React from "react";
 import Profile from "./Profile";
 import Textbox from "./Textbox";
 
-function Post(){
+function CrateNewPost(){
+
     return (
         <post>
             <Profile />
@@ -13,4 +14,4 @@ function Post(){
     )
 }
 
-export default Post;
+export default CrateNewPost;
