@@ -1,9 +1,14 @@
 import React from "react";
+import Profile from "./Profile";
+import Textbox from "./Textbox";
 
-function Post(params) {
-    return(
+function Post(){
+    return (
         <post>
-            
+            <Profile />
+            <Textbox 
+                textboxName= "newPost"
+            />
         </post>
     )
 }

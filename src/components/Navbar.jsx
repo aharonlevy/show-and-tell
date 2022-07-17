@@ -17,11 +17,12 @@ function Navbar(){
         <h3>Show&Tell</h3>
         <nav ref={navRef}>
         <a href="/#">home</a>
-        <a href="/#">about me</a>
-         <button onClick={showNavbar}><FaTimes /></button>
+        <a href="/#">about</a>
+        <a href="/#">Contect</a>
+         <button className="nav-btn nav-close-btn" onClick={showNavbar}><FaTimes /></button>
         </nav>
-        <Profile />
-         <button onClick={showNavbar}><FaBars /></button>
+        <Profile className="profile-nav" />
+         <button className="nav-btn" onClick={showNavbar}><FaBars /></button>
         </header>
     )
 }

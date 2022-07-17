@@ -1,9 +1,9 @@
 import React from "react";
 
 function Profile(){
-   return( <profile>
+   return( <div>
         <input name="profilePic" type="image" src="/assts/buttons/profile-closed.jpg" alt="profile"/>
-    </profile>
+    </div>
    )
 
 }

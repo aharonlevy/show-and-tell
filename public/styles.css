@@ -1,40 +1,168 @@
-navbar {
-    position: relative;
-width: 100vw;
-height: 10vh;
+/* font will be added in the future */
 
-background: #FFFFFF;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-navbar h1{
-    position: absolute;
-    width: 105px;
-    height: 39px;
-    left: 676px;
-    top: 32px;
-    font-style: normal;
-    font-size: 24px;
-    font-weight: 400;
+
+:root{
+    --mainColor: #d4d3d3;
+    --mainColotLighter:#e4e4e4;
+    --seconderyColor: #DB2B39;
+    --textColor: #351E43;
+}
+
+
+/* ---------------navbar component-------------- */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+}
+
+nav a{
+    margin: 0 2rem;
+    color: var(--textColor);
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: var(--seconderyColor)
+}
+
+header .nav-btn{
+    padding: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    font-size: 1.8rem;
+    visibility: hidden;
+    opacity: 0;
+    /* visibility and opacity hidden and 0 so that the btns will be hidden if the cscreen is big inof */
+}
+
+.profile-nav{
+    /* need to put at the top right corner*/
+}
+
+@media only screen and (max-width: 1024px) {
+    header .nav-btn {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: var(--mainColor);
+        transition: 1s;
+        transform: translateY(-100vh);
+    }
+
+    header .responsive_nav{
+        transform: none;
+    }
+
+    nav .nav-close-btn{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    nav a{
+        font-size: 1.5rem;
+    }
+    
+}
+
+/* ------------------------profile component------------------------- */
+profile input {
+    border-radius: 50px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    profile input {
+        border-radius: 8rem;
+    }
+}
+
+/* ------------------------footer component------------------------- */
+
+footer{
+    position:absolute;
+    left:0;
+    bottom:0;
     text-align: center;
-    line-height: 39px;
-
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    padding: 0 2rem;
+    background-color: var(--mainColor);
+    color: var(--textColor);
 }
 
-profile input{
-    position: absolute;
-width: 64px;
-height: 64px;
-left: 1264px;
-top: 20px;
-
-background: #FFFFFF;
+footer .social-btn {
+    padding: 8px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    font-size: 1.8rem;
+    
 }
 
-.hamburger{
-    position: absolute;
-    height: 64px;
-    width: 64px;
-    left: 16px;
-    top: 20px;
+/* ----------------------NewPostArea componente---------------------------------- */
 
-background: #FFFFFF;
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: var(--mainColotLighter);
+    color: var(--textColor);
+    
+}
+
+
+.post-area{
+    /* background-color: transparent; */
+    border: 1px solid;
+    border-radius: 5px;
+    height: 80%;
+    width: 75%;
+    background-color: var(--mainColor);
+}
+
+/* --------------Textbox component-------------------------------- */
+
+.textbox-basic{
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: var(--mainColotLighter); 
+}
+
+/* -------------------post component-------------------- */
+
+Post {
+    display: flex;
+    gap: 3rem;
+    padding: 3%;
 }
