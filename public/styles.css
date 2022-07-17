@@ -13,8 +13,8 @@
     --textColor: #351E43;
 }
 
-
-/* ---------------navbar component-------------- */
+/* ------------------------------------components------------------------------------------- */
+/* ---------------navbar-------------- */
 header{
     display: flex;
     align-items: center;
@@ -90,8 +90,8 @@ header .nav-btn{
     
 }
 
-/* ------------------------profile component------------------------- */
-profile input {
+/* ------------------------profile------------------------- */
+Profile input {
     border-radius: 50px;
 }
 
@@ -102,7 +102,7 @@ profile input {
     }
 }
 
-/* ------------------------footer component------------------------- */
+/* ------------------------footer------------------------- */
 
 footer{
     position:absolute;
@@ -128,7 +128,7 @@ footer .social-btn {
     
 }
 
-/* ----------------------NewPostArea componente---------------------------------- */
+/* ----------------------NewPostArea---------------------------------- */
 
 .bar{
     display: flex;
@@ -151,7 +151,7 @@ footer .social-btn {
     background-color: var(--mainColor);
 }
 
-/* --------------Textbox component-------------------------------- */
+/* --------------Textbox-------------------------------- */
 
 .textbox-basic{
     border: 1px solid;
@@ -159,11 +159,27 @@ footer .social-btn {
     background-color: var(--mainColotLighter); 
 }
 
-/* -------------------post component-------------------- */
+/* -------------------postcard-------------------- */
 
-Post {
+Postcard {
     display: flex;
     gap: 3rem;
     padding: 3%;
+    
+}
+
+/* ------------------------Content-------------------------- */
+.content-container{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 70%; 
+}
+
+.postcard-image{
+
+}
+
+.postcard-text{
     
 }

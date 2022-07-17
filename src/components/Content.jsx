@@ -5,7 +5,7 @@ function Content(props) {
     const text= props.text;
     return (
         <div className="content-container">
-            <img src={imageSoerce?imageSoerce:null}  alt="null" />
+            <img className="postcard-image" src={imageSoerce?imageSoerce:null}  alt="null" />
             <p className="postcard-text">{text?text:null}</p>
         </div>
     )
